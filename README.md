@@ -38,6 +38,23 @@ tl_tech_task/
 
 This is a single-file application. All HTML, CSS, and JavaScript are contained in `index.html`.
 
+## Contributing
+
+We welcome contributions! Please follow these guidelines:
+
+1. **Branch Naming**: Use the format `feature/<issue>-description`
+   - Example: `feature/CALC-4-add-division`
+   - Fork the repository and create your branch from the fork
+
+2. **Keep PRs Small**: Pull requests should be under 500 lines of code
+   - Break large features into smaller, focused PRs
+   - Each PR should address a single concern
+
+3. **Requirements Before Merging**:
+   - ✅ CI checks must pass
+   - ✅ 1-2 approvals required
+   - ✅ Code owner review (if CODEOWNERS is configured)
+
 ## CI/CD
 
 This repository uses GitHub Actions for continuous integration. The CI workflow automatically:
