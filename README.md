@@ -27,13 +27,26 @@ Simply open `index.html` in your web browser. No build process or dependencies r
 tl_tech_task/
 ├── index.html          # Main calculator application
 ├── README.md           # Project documentation
+├── .htmlvalidate.json  # HTML validation configuration
 └── .github/            # GitHub templates and workflows
-    └── pull_request_template.md
+    ├── pull_request_template.md
+    └── workflows/
+        └── ci.yml      # GitHub Actions CI workflow
 ```
 
 ## Development
 
 This is a single-file application. All HTML, CSS, and JavaScript are contained in `index.html`.
+
+## CI/CD
+
+This repository uses GitHub Actions for continuous integration. The CI workflow automatically:
+- Validates HTML structure and syntax
+- Checks JavaScript syntax
+- Performs code quality checks
+- Runs on every push and pull request
+
+See `.github/workflows/ci.yml` for the complete CI configuration.
 
 ## License
 
